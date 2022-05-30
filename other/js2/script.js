@@ -1,9 +1,3 @@
-console.log("test");
-
-setInterval(() => {
-	console.log("yes");
-}, 10000)
-
 let nt = document.getElementById("toggler");
 let nb = document.getElementById("navs");
 let ld = document.getElementById("loading-box")
