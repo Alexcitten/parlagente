@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ArLet - A Discord Bot</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="./assets/main.ico">
+	<link rel="canonical" href="https://isovbot.tk/"/>
+    <meta property="og:url" content="https://isovbot.tk/" />
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="./other/css2/coloring.css">
+	<link rel="stylesheet" type="text/css" href="./other/css2/style.css">
+	<link rel="stylesheet" type="text/css" href="./other/css2/txtformatting.css">
+	<link rel="stylesheet" type="text/css" href="./other/css2/shadow.css">
+	<link rel="stylesheet" type="text/css" href="./other/css2/loading.css">
+	<!-- css end -->
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="on">
+	<div class="loading" id="loading-box">
+		<div class="loading-item"><div class="loading-progress"></div></div>
+	</div>
+    <meta content="Первый крипто-бот в Discord" property="og:description" />
+    <meta content="Первый крипто-бот в Discord" name="description" />
+	<main class="main">
+		<!-- navbar -->
+		<div class="navbar">
+			<div class="container">
+				<div class="navbar-nav">
+					<div class="navbar-brand">
+						<span class="navbar-brand-txt"><a class="txt-bold type-1" href="https://isovbot.tk"></a></span>
+					</div>
+
+					<span class="navbar-toggler" id="toggler"><i onclick="toggleNavbar(this)" class="fas fa-bars"></i></span>
+
+					<div class="navs" id="navs">
+						<!-- You can change the href value and the text value -->
+						<div class="navs-item notbtn"><a href="https://isovbot.tk/pages/commands" class="txt-uppercase">Команды</a></div>
+						<div class="navs-item notbtn"><a href="https://discord.gg/jNKWTx7AJp" class="txt-uppercase">Поддержка</a></div>
+						<div class="navs-item notbtn"><a href="https://discord.com/oauth2/authorize?client_id=631868778074079245&permissions=277025704960&scope=bot%20applications.commands" class="txt-uppercase">Пригласить</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- navbar end -->		
+
+		<!-- jumbotron -->
+		<div class="jumbotron">
+			<div class="container">
+				<div class="jumbotron-items">
+					<div class="jumbotron-item">
+						<span class="jumbotron-t">ArLet</span>
+						<p class="jumbotron-d">Первый Discord-бот который создает кошельки и переводит криптовалюту командами</p>
+						<div class="jumbotron-buttons">
+              <button class="btn" onclick="location.href='https://discord.com/oauth2/authorize?client_id=631868778074079245&permissions=277025704960&scope=bot%20applications.commands'">Пригласить</button>
+						</div>
+					</div>
+					<div class="jumbotron-item">
+						<img src="./other/img2/isovbot2.png" alt="image">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- jumbotron end -->
+		<span class="scroll-down" onclick="document.getElementById('features').scrollIntoView()"><i class="fas fa-arrow-down"></i></span>
+	</main>
+
+	<!-- features -->
+	<div class="features-box">
+		<h1 class="features-t" id="features">Подробнее</h1>
+		<div class="container">
+			<div class="features">
+				<div class="feature">
+					<img class="feature-img" src="./other/img2/btc.png"></img>
+					<div class="feature-info">
+						<h2 class="feature-info-t">Криптовалюты</h2>
+						<p class="feature-info-d">Вы можете создавать реальные кошельки с криптовалютой, переводить криптовалюту на другие счета.</p>
+					</div>
+				</div>
+				<div class="feature">
+					<img class="feature-img" src="./other/img2/opensea.png"></img>
+					<div class="feature-info">
+						<h2 class="feature-info-t">OpenSea API</h2>
+						<p class="feature-info-d">Различные вещи, основанные на API маркетплейса OpenSea, криптовалютная электронная коммерция: покупка, продажа и торги любым крипто-товаром. Вы можете легко создать собственный рынок для ваших невзаимозаменяемых токенов или NFT.</p>
+					</div>
+				</div>
+				<div class="feature">
+					<img class="feature-img" src="./other/img2/stat.png"></img>
+					<div class="feature-info">
+						<h2 class="feature-info-t">Так же</h2>
+						<p class="feature-info-d">Просмотр статистик о многих криптовалют, доступ к метрикам в реальном времени, включая рыночную цену, процентные изменения, и много других статистик</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- features end -->
+	<!-- services -->
+	<div class="services-box">
+		<h1 class="services-t" id="services">Нам доверяют</h1>
+		<div class="container">
+			<div class="services">
+				<div class="service">
+					<span><i class="fas fa-server"></i> 1.500+ серверов</span>
+				</div>
+				<div class="service">
+					<span><i class="fas fa-users"></i> 140.000+ людей</span>
+				</div>
+				<div class="service">
+					<span><i class="fas fa-hashtag"></i> 43.000+ каналов</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- services end -->
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-items">
+				<div class="footer-item">
+					<span>Спонсоры</span>
+					<ul class="footer-ul">
+						<li><a href="#">Хочешь попасть сюда? Пиши Alexcitten#8275</a></li>
+					</ul>
+				</div>				
+				<div class="footer-item">
+					<span>Другое</span>
+					<ul class="footer-ul">
+						Весь функционал бота находится в Slash-командах
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer end -->
+	<script type="text/javascript" src="./other/js2/script.js"></script>
+</body>
+</html>

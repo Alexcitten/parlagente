@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../other/img2/isovbot2.png">
+    <title>ArLet Commands</title>
+
+
+    <div class="jumbotron text-center bg-transparent">
+        <h1 class="commandstitle">Команды</h1>
+        <p class="lead commandssub">Остальной функционал, перечисленный на главной странице - в разработке.</p>
+        <hr>
+        <input id="myInput" type="text" class="searchbox" placeholder="Найти команду..">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="border"></div>
+        <br>
+        <br>
+        <br>
+        <div id="myCmd">
+            <br>
+            <button type="button" class="collapsible">createwallet<span> - Создать AR-кошелёк</span></button>
+            <div class="content">
+                <h4 style="color: rgb(255, 255, 255);">Категория:</h4>
+                <p style="color: #e88734;">Криптовалюта</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>/createwallet</p>
+                <h4 style="color: #cccccc;">Описание:</h4>
+                <p>Создаёт полу-холодный крипто-кошелёк с криптовалютой AR. Бот вышлет Вам файл в сообщении и в личные сообщения с Вашим приватным ключом, берегите его, ибо без него нельзя зайти в кошелёк.</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">balance<span> - Просмотр баланса AR</span></button>
+            <div class="content">
+                <h4 style="color: rgb(255, 255, 255);">Категория:</h4>
+                <p style="color: #e88734;">Криптовалюта</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>/balance (адрес кошелька)</p>
+                <h4 style="color: #cccccc;">Описание:</h4>
+                <p>Позволяет просмотреть баланс AR на указанном кошельке, причём любого. Для этого Вам потребуется 43-ёх значный адрес кошелька.</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">send<span> - Отправить AR</span></button>
+            <div class="content">
+                <h4 style="color: rgb(255, 255, 255);">Категория:</h4>
+                <p style="color: #e88734;">Криптовалюта</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>/send (адрес кошелька получателя) (сумма AR)</p>
+                <h4 style="color: #cccccc;">Описание:</h4>
+                <p>Позволяет отправить другому человеку AR. Вам бот высылает файл с транзакцией, в сообщении и в личные сообщения. Каждая транзакция это объем данных, фиксированный в блоквейве.</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">help<span> - Список команд</span></button>
+            <div class="content">
+                <h4 style="color: rgb(255, 255, 255);">Категория:</h4>
+                <p style="color: #ff3c00;">Другое</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>/help</p>
+                <h4 style="color: #cccccc;">Пример:</h4>
+                <p>/help</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">botinfo<span> - Информация о боте</span></button>
+            <div class="content">
+                <h4 style="color: rgb(255, 255, 255);">Категория:</h4>
+                <p style="color: #ff3c00;">Другое</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>/botinfo</p>
+                <h4 style="color: #cccccc;">Описание:</h4>
+                <p>Информация о боте, сервера, хостинг, и прочая информация.</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">invite<span> - Полезные ссылки</span></button>
+            <div class="content">
+                <h4 style="color: rgb(255, 255, 255);">Категория:</h4>
+                <p style="color: #ff3c00;">Другое</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>/invite</p>
+                <h4 style="color: #cccccc;">Описание:</h4>
+                <p>Полезные ресурсы, ссылки.</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">ping<span> - Пинг бота</span></button>
+            <div class="content">
+                <h4 style="color: rgb(255, 255, 255);">Категория:</h4>
+                <p style="color: #ff3c00;">Другое</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>/ping</p>
+                <h4 style="color: #cccccc;">Описание:</h4>
+                <p>Проверка пинга бота, это более тестовая команда, проверить пинг так же можно в botinfo.</p>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    </div>
+
+    <footer class="mastfoot mb-auto">
+            <div class="container-fluid mb-auto">
+                <div class="row d-flex justify-content-center">
+                    <div class="">
+                        <p style="font-size: 19px; padding: 0px; margin: 0px;"><a href="https://github.com/Alexcitten"
+                                style="text-decoration: none; color: white;">ArLet by Alexcitten#8275</a></br>ArLet ©
+                            2022. All
+                            rights reserved.</br>[<a href="./license.html"><b>Политика конфиденциальности</b></a>]</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
